@@ -18,6 +18,6 @@ export class ProductsService {
     if (!product) {
       throw new NotFoundException('could not find product');
     }
-    return { ...Product };
+    return { ...this.products };
   }
 }
